@@ -37,10 +37,10 @@ To use this project, follow these steps:
 
 - scraping/tweepy_scraper.ipynb
 - embedding_clustering/data_cleaning_embedding_clustering.ipynb
-- zero-shot labeling/sentiment_analysis_zero_shot.ipynb - :warning: This notebook was created using Google Colab to leverage GPU acceleration for efficient processing.
+- zero-shot labeling/sentiment_analysis_zero_shot.ipynb - :warning: This notebook was created using **Google Colab** to leverage GPU acceleration for efficient processing. :warning:
 - models/classical_ml_models.ipynb
-- models/neural_network_model.ipynb - :warning: This notebook was created using Google Colab to leverage GPU acceleration for efficient processing.
-- models/BERT_sentiment_classifier.ipynb - :warning: This notebook was created using Google Colab to leverage GPU acceleration for efficient processing.
+- models/neural_network_model.ipynb - :warning: This notebook was created using **Google Colab** to leverage GPU acceleration for efficient processing. :warning:
+- models/BERT_sentiment_classifier.ipynb - :warning: This notebook was created using **Google Colab** to leverage GPU acceleration for efficient processing. :warning:
 Ensure that you have the necessary data available and provide the appropriate file paths in the notebooks where required.
 
 ### Technologies Used
