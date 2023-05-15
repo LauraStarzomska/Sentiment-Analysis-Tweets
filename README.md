@@ -12,7 +12,7 @@ The aim of the project is to create a model of Sentiment Analysis based on tweet
 4. Clustering 
 5. Data labeling
 6. Classical ML Models
-7. Neural Models
+7. Neural Network Models
 8. BERT Sentiment Classifiter
 
 
