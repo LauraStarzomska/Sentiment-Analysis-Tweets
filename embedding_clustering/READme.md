@@ -1,6 +1,6 @@
 # Data cleaning, creating embedding & clustering
 
-This part of the project focuses on cleaning & preprocessing of the data and then creating word embedding out of it using Word2Vec library. In the end it build clusters using K-Means method to label data by sentiments. I also prepared my own-labeled 150 tweets to compare results with K-Means clusters. Unfortunately, the accuracy was very poor - 34%. This is why I used Zero-Shot Classification in the next stage.
+This part of the project focuses on cleaning & preprocessing of the scraped tweets and then creating word embedding out of it using Word2Vec library. In the end it build clusters using K-Means method to label data by sentiments. I also prepared my own-labeled 150 tweets to compare results with K-Means clusters. Unfortunately, the accuracy was very poor - 34%. This is why I used Zero-Shot Classification in the next stage.
 
 # Files
 
