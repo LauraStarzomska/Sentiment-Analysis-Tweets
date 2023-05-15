@@ -63,7 +63,6 @@ This section outlines the methodology employed in each stage of the Sentiment An
 
 4. **Clustering**:
    - Applied the K-means clustering algorithm to group similar tweets based on the word embeddings obtained in the previous step.
-   - Explored different cluster sizes and evaluated the cluster quality using techniques such as the silhouette score.
    - Identified clusters representing distinct sentiment patterns or themes within the dataset.
 
 5. **Data labeling**:
