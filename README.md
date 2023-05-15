@@ -67,18 +67,16 @@ This section outlines the methodology employed in each stage of the Sentiment An
    - Identified clusters representing distinct sentiment patterns or themes within the dataset.
 
 5. **Data labeling**:
-   - Labeled a subset of the tweets manually or through alternative labeling techniques to create a labeled dataset for model training and evaluation.
-   - Ensured a balanced distribution of positive, negative, and neutral sentiment labels to avoid bias in the sentiment analysis model.
+   - Labeled 150 of the tweets manually and then compare results with clusters
+   - The results were poor so I labeled tweets with Zero-Shot Classification
 
 6. **Classical ML Models**:
-   - Developed classical machine learning models, such as logistic regression, decision trees, random forests, and support vector machines (SVM), to classify the sentiment of the tweets.
-   - Utilized features derived from the word embeddings and other relevant textual or metadata features.
+   - Developed classical machine learning models, such as logistic regression, Naive Bayes and support vector machines (SVM), to classify the sentiment of the tweets.
    - Evaluated and compared the performance of different models using appropriate metrics, such as accuracy, precision, recall, and F1 score.
 
 7. **Neural Models**:
-   - Utilized neural network architectures, such as recurrent neural networks (RNN), long short-term memory (LSTM), or convolutional neural networks (CNN), to capture the contextual information and dependencies in the tweet data.
-   - Constructed and trained deep learning models using frameworks like TensorFlow to predict sentiment labels.
-   - Optimized hyperparameters, model architectures, and regularization techniques to enhance performance.
+   - Utilized neural network architectures to capture the contextual information and dependencies in the tweet data.
+   - Fine-tuning of the model by optimizing hyperparameters, model architectures, and regularization techniques to enhance performance.
 
 8. **BERT Sentiment Classifier**:
    - Employed the powerful BERT (Bidirectional Encoder Representations from Transformers) model, pre-trained on a large corpus, to perform sentiment classification.
@@ -104,3 +102,37 @@ Throughout the project, attention was given to data quality, feature engineering
 - BERT (Bidirectional Encoder Representations from Transformers)
 
 ### Results
+
+The sentiment analysis project on tweets related to the abortion topic provided valuable insights and outcomes. However, certain challenges were encountered along the way, highlighting areas for potential improvement. In this section, we discuss the results obtained from each stage of the project and address the limitations observed.
+
+The initial stage involved clustering the tweets based on word embeddings. Unfortunately, the clustering approach did not yield optimal results, with an accuracy of only 34% when compared to a hand-labeled dataset of 150 tweets. This indicates that the clusters generated using word embeddings did not align well with the underlying sentiment patterns in the data. Future work could focus on exploring alternative clustering algorithms or employing dimensionality reduction techniques to improve clustering performance.
+
+To overcome the limitations of clustering, the zero-shot labeling approach was employed to label unlabelled tweets. The zero-shot labeling technique achieved an accuracy of 47%. However, it resulted in an imbalanced dataset, with 82.3% of the tweets classified as negative and only 17.7% as positive. The main challenge encountered was the class imbalance, which can adversely affect model performance and bias the predictions towards the majority class. To address this issue, several strategies can be explored:
+
+1. Data Augmentation: Generate synthetic data points for the minority class to increase its representation in the dataset. Techniques like text augmentation, such as synonym replacement or back-translation, can be used to create additional positive sentiment instances.
+
+2. Undersampling/Oversampling: Apply undersampling techniques to reduce the majority class instances or oversampling techniques to increase the minority class instances, thus achieving a more balanced distribution. Techniques like Random Undersampling, SMOTE (Synthetic Minority Oversampling Technique), or ADASYN (Adaptive Synthetic Sampling) can be explored.
+
+3. Cost-Sensitive Learning: Assign different misclassification costs to different classes during model training. This approach encourages the model to focus more on correctly classifying instances from the minority class.
+
+Moving on to model development, classical machine learning models were built to classify the sentiment of the tweets. Among the models tested, the Logistic Regression model performed the best, achieving an accuracy of 87% on the test set and 90% on the train set. However, further optimizations, such as feature selection, hyperparameter tuning, or ensemble techniques, could potentially enhance the performance of the classical ML models.
+
+Additionally, neural network models were employed to capture the contextual information and dependencies in the tweet data. Despite fine-tuning efforts, the neural network model still faced challenges in accurately classifying sentiments, indicating that fine-tuning alone might not be sufficient. To improve the performance of the neural network model, several approaches can be considered:
+
+1. Model Architecture: Explore more complex architectures like LSTM (Long Short-Term Memory) or CNN (Convolutional Neural Networks) to better capture the sequential or spatial information present in the tweet data.
+
+2. Regularization Techniques: Apply regularization techniques such as dropout or L1/L2 regularization to mitigate overfitting and improve generalization.
+
+3. Hyperparameter Tuning: Systematically search and optimize hyperparameters such as learning rate, batch size, and number of layers to find the best configuration for the neural network model.
+
+Furthermore, the BERT (Bidirectional Encoder Representations from Transformers) model, specifically the DistilBERT variant, was utilized for sentiment classification. The DistilBERT model achieved an overall accuracy of approximately 86.45% in correctly classifying instances. However, it is important to note that the model used in this project was not fine-tuned but rather utilized as a pre-trained classifier. Fine-tuning the DistilBERT model on a larger and more domain-specific labeled dataset could lead to further improvements in performance and better alignment with the sentiment analysis task.
+
+In summary, the project provided valuable insights into the sentiment analysis of tweets related to the abortion topic. However, several challenges were identified, particularly in relation to the imbalance in the sentiment distribution within the dataset. This imbalance resulted in poor model performance and biased predictions towards the majority class.
+
+To address this issue, future improvements could focus on enhancing the balance of the dataset by employing data augmentation techniques, undersampling or oversampling methods, or cost-sensitive learning approaches. These techniques aim to rectify the class imbalance and ensure a more representative distribution of positive and negative sentiment instances.
+
+Additionally, further enhancements can be made to the model development process. While classical machine learning models, such as Logistic Regression, demonstrated reasonable accuracy, there is room for improvement through feature selection, hyperparameter tuning, or ensemble methods. Exploring more advanced neural network architectures, such as LSTM or CNN, along with regularization techniques and hyperparameter optimization, can also enhance the performance of the neural models.
+
+Regarding the BERT-based sentiment classifier, the use of the DistilBERT model provided promising results with an overall accuracy of approximately 86.45%. Unfortunately, during testing it classified the test sentence **wrongly**. However, it should be noted that the model was not fine-tuned specifically for the sentiment analysis task in this project. Fine-tuning the DistilBERT model on a larger and more domain-specific labeled dataset could potentially yield higher accuracy and improve the alignment between the model and the sentiment analysis task.
+
+In conclusion, the sentiment analysis of tweets related to the abortion topic revealed challenges related to dataset imbalance and model performance. By addressing these challenges through techniques like dataset balancing, model optimization, and fine-tuning, it is possible to improve the overall performance and accuracy of the sentiment analysis model.
