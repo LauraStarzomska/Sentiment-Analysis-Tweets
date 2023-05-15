@@ -19,7 +19,7 @@ The aim of the project is to create a model of Sentiment Analysis based on tweet
 ### Files
 
 - `scraping`: files with scraper code *tweepy_scraper.ipynb* that scrapes 25000 tweets from Twitter using Tweepy library (**1 stage**)
-- `embedding_clustering`: files with *data_cleaning_embedding_clustering.ipynb* Jupyter Notebook that cleans, preprocess tweets and then creates word embedding out of them. Finally it creates clusters. (**2, 3, 4 stages**) 
+- `embedding_clustering`: files with *data_cleaning_embedding_clustering.ipynb* Jupyter Notebook that cleans, preprocesses tweets and then creates word embedding out of them. Finally it creates clusters. (**2, 3, 4 stages**) 
 - `zero-shot labeling`: files with python code *sentiment_analysis_zero_shot.ipynb* that labels unlabelled tweets (**5 stage**)
 - `models`: files with 3 jupyter notebooks that build classical ml models, neural network model and BERT sentiment classifier  (**6,7,8 stages**)
 
