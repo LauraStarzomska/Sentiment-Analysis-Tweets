@@ -112,7 +112,9 @@ To overcome the limitations of clustering, the zero-shot labeling approach was e
 
 2. Undersampling/Oversampling: Apply undersampling techniques to reduce the majority class instances or oversampling techniques to increase the minority class instances, thus achieving a more balanced distribution. Techniques like Random Undersampling, SMOTE (Synthetic Minority Oversampling Technique), or ADASYN (Adaptive Synthetic Sampling) can be explored.
 
-3. Cost-Sensitive Learning: Assign different misclassification costs to different classes during model training. This approach encourages the model to focus more on correctly classifying instances from the minority class.
+3. Choose different topic: probably this one is too more one-sided.
+
+4. Scrape more data: Probably the more the data the more balanced they are. It could be checked.
 
 Moving on to model development, classical machine learning models were built to classify the sentiment of the tweets. Among the models tested, the Logistic Regression model performed the best, achieving an accuracy of 87% on the test set and 90% on the train set. However, further optimizations, such as feature selection, hyperparameter tuning, or ensemble techniques, could potentially enhance the performance of the classical ML models.
 
