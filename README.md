@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The aim of the project is to create a model of Sentiment Analysis based on tweets about abortion topic. Besides this READ.me files, every stage of the project has its own where files are explained in more details. 
+The aim of the project is to create a model of Sentiment Analysis based on tweets about abortion topic. :exclamation: Besides this READ.me files, every stage of the project has its own where files are explained in more details. :exclamation:
 
 ### Project Stages
 
