@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The aim of the project is to create a model of Sentiment Analysis based on tweets about abortion topic.
+The aim of the project is to create a model of Sentiment Analysis based on tweets about abortion topic. Besides this READ.me files, every stage of the project has its own where files are explained in more details. 
 
 ### Project Stages
 
@@ -37,10 +37,10 @@ To use this project, follow these steps:
 
 - scraping/tweepy_scraper.ipynb
 - embedding_clustering/data_cleaning_embedding_clustering.ipynb
-- zero-shot labeling/sentiment_analysis_zero_shot.ipynb
+- zero-shot labeling/sentiment_analysis_zero_shot.ipynb - This notebook was created using Google Colab to leverage GPU acceleration for efficient processing.
 - models/classical_ml_models.ipynb
-- models/neural_network_model.ipynb
-- models/BERT_sentiment_classifier.ipynb
+- models/neural_network_model.ipynb - This notebook was created using Google Colab to leverage GPU acceleration for efficient processing.
+- models/BERT_sentiment_classifier.ipynb - This notebook was created using Google Colab to leverage GPU acceleration for efficient processing.
 Ensure that you have the necessary data available and provide the appropriate file paths in the notebooks where required.
 
 ### Technologies Used
