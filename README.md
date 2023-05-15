@@ -1,5 +1,7 @@
 # Sentiment Analysis Tweets
 
+### Introduction
+
 The aim of the project is to create a model of Sentiment Analysis based on tweets about abortion topic.
 
 ### Project Stages
@@ -41,6 +43,21 @@ To use this project, follow these steps:
 - models/BERT_sentiment_classifier.ipynb
 Ensure that you have the necessary data available and provide the appropriate file paths in the notebooks where required.
 
-### Models used
+### Technologies Used
+
+- Python 3.9
+- Tweepy API v2
+- Jupyter Notebook
+- Google Colab
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- TensorFlow
+- Hugging Face Transformers
+- NLTK
+- Word2Vec
+- K-means Clustering
+- BERT (Bidirectional Encoder Representations from Transformers)
 
 ### Results
