@@ -35,7 +35,7 @@ To use this project, follow these steps:
 
 3. Run the Jupyter Notebooks in the following order:
 
-- scraping/tweepy_scraper.ipynb
+- scraping/tweepy_scraper.ipynb ❗ you have to have your own account and generate keys for twitter API ❗
 - embedding_clustering/data_cleaning_embedding_clustering.ipynb
 - zero-shot labeling/sentiment_analysis_zero_shot.ipynb - :warning: This notebook was created using **Google Colab** to leverage GPU acceleration for efficient processing. :warning:
 - models/classical_ml_models.ipynb
