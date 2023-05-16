@@ -15,11 +15,11 @@ There is a huge room for improvement in terms of data collection and labeling bu
 
 ### Files
 
-`BERT_model.zip` -  saved and compressed (due to huge size) language model
-`bert_model.ipynb` - python notebook with code that creates BERT Sentiment Classifier
-`best_model.pickle` - saved 1st version of neural network model
-`best_model2.pickle` - saved 2nd version of neural network model
-`classical_ml_models.ipynb`- python notebook with 3 classical machine learning models
-`deep_learning.ipynb` - python notebook with neural network model creation 
-`tweets_df_cleaned_labeled.csv` - cleaned and labeled tweets
-`word2vec.model` - saved word embeddings
+- `BERT_model.zip` -  saved and compressed (due to huge size) language model
+- `bert_model.ipynb` - python notebook with code that creates BERT Sentiment Classifier
+- `best_model.pickle` - saved 1st version of neural network model
+- `best_model2.pickle` - saved 2nd version of neural network model
+- `classical_ml_models.ipynb`- python notebook with 3 classical machine learning models
+- `deep_learning.ipynb` - python notebook with neural network model creation 
+- `tweets_df_cleaned_labeled.csv` - cleaned and labeled tweets
+- `word2vec.model` - saved word embeddings
