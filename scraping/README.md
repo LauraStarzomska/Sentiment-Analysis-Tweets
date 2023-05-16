@@ -4,5 +4,5 @@ This notebook focuses on 1st stage of the project - tweets scraping. It uses twe
 
 ### Files
 
-`tweepy_scraper.ipynb` - python code with scraper ❗ you have to have your own account and generate keys for twitter API ❗ https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
-`tweets.csv`- scraped tweets
+- `tweepy_scraper.ipynb` - python code with scraper ❗ you have to have your own account and generate keys for twitter API ❗ https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api
+- `tweets.csv`- scraped tweets
